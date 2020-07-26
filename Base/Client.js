@@ -1,6 +1,6 @@
 const { Client, Collection} = require('discord.js');
 const path = require("path")
-exports = class ManageGuild extends Client {
+module.exports = class ManageGuild extends Client {
     constructor(options) {
         super(options);
         this.prefix = require("../config").prefix
