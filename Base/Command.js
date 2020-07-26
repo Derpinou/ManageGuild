@@ -1,4 +1,4 @@
-exports = class Command {
+module.exports = class Command {
     constructor(client, {
         name = null,
         description = false,
