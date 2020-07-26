@@ -4,8 +4,6 @@ const manager = new ShardingManager("./index.js", {
     totalShards: require("./config").shardCount,
     shardArgs: [ ...process.argv, ...[ '--sharded' ] ]
 });
-exports.manager = manager
-console.log("Hello, "+require("os").userInfo().username+". Thanks for using Atom");
-
+module.exports.manager = manager
 manager.spawn();
 
