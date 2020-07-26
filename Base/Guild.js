@@ -1,6 +1,6 @@
 const mongoose = require("mongoose")
 
-exports = mongoose.model("Guild", new mongoose.Schema({
+module.exports = mongoose.model("Guild", new mongoose.Schema({
 
     })
 );
