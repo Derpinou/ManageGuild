@@ -4,6 +4,7 @@ const manager = new ShardingManager("./index.js", {
     totalShards: require("./config").shardCount,
     shardArgs: [ ...process.argv, ...[ '--sharded' ] ]
 });
-module.exports.manager = manager
 manager.spawn();
+module.exports.manager = manager
+
 
