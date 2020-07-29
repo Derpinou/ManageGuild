@@ -15,8 +15,7 @@ module.exports = class Command {
         let category = 'Other';
         if(dirname){
             category = dirname.split(/\\/g)[dirname.split(/\\/g).length-1]
-        }     // Linux dirname.split(/\//g)[dirname.split(/\//g).length-1]
-        //Windows a!eval __dirname.split(/\\/g)[__dirname.split(/\\/g).length-1]
+        }     
         this.client = client;
         this.conf = { enabled, guildOnly, aliases, permission, botpermissions, owner};
         this.help = { name, description, category, usage, examples };
